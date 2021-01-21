@@ -1,19 +1,30 @@
 //objects and properties
 
-var kyaw = {
+var personData = {
     firstName: 'Htin',
     lastName: 'Kyaw',
-    email: 'htin@faker.com',
+    email: 'bettercallkyaw@gmail.com',
+    job: 'full stack developer',
     age: 21,
     birthYear: 1999,
-    family: ['Mya', 'Min', 'Zaw'],
-    city: 'Pinlaung',
-    village: 'Saung Pyaung',
+    hobbies: ['hiking', 'sports', 'coding'],
+    personFamily: ['min', 'myat', 'htut'],
+    cityLocation: 'Yangon',
+    currentLive: 'Pinlaung,Saung Pyaung,Shan State',
+    programming: [
+        {
+            server:'PHP,javascript,python'
+        },
+        {
+            framework:'django,laravel,node'
+        }
+    ],
     calcAge: function () {
-        return 2020 - this.birthYear;
+        return 2021 - this.birthYear;
     }
 };
 
-console.log(kyaw.village);
-console.log(kyaw['age']);
-console.log(kyaw.calcAge());
+console.log(personData.email);
+console.log(personData.hobbies[0]);
+console.log(personData.programming[0]);
+console.log(personData.calcAge());

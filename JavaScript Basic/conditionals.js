@@ -1,23 +1,22 @@
 var fullName = 'Htin Kyaw';
 var isMarried = false;
-var age = 21;
+var age = 22;
 
 if (isMarried == false) {
-    console.log('Htin Kyaw is not married yet!😂😂');
+    console.log(fullName+' is still single now.');
 } else {
-    console.log('Htin Kyaw is married yet 😎😎');
+    console.log(fullName+' is not single.');
 }
 
 if (age < 13) {
     console.log(fullName+' is a boy');
 } else if (age >= 13 && age < 20) {
-    console.log(fullName+' is a teenager');
+    console.log(fullName+' is a teenger');
 } else {
     console.log(fullName+' is a young man');
 }
-
 //ternary operator
-age >= 18 ? console.log(fullName + ' drinks beer') : console.log(fullName + ' drinks juice');
+age>=18?console.log(fullName+' drinks beer'):console.log(fullName+' drinks juice');
 
 //switch statements
 var job = 'web developer';
@@ -29,8 +28,8 @@ switch (job) {
         console.log(fullName + ' is a teacher');
         break;
     case 'driver':
-        console.log(fullName+' is a texi driver');
+        console.log(fullName + ' is a driver');
+        break;
     default:
-        console.log(fullName+' is a something');
-       
+        console.log(fullName+' is something');
 }
