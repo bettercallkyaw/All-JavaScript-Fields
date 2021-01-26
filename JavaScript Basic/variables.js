@@ -1,16 +1,17 @@
-var firstName = 'Htin'; //string
-var lastName = 'Kyaw';
+var firstName = 'William';
+var lastName = 'Smith';
 
 console.log('Hello My name is ' + firstName + ' ' + lastName);
 
-var age = 21; //int
-var price = 33.3 //float
-var isMarried = true; //bool
+var fullName = 'Htin Kyaw'; //string
+var isCool = true; //bool
 var house = null; //null
+var price = 44; //int
+var totalPay = 44.2; //float
 var job; //undefined
 
-console.log(age);
-console.log(price);
-console.log(isMarried);
-console.log(house);
 console.log(job);
+console.log(fullName);
+console.log(house);
+console.log(price);
+console.log(totalPay);

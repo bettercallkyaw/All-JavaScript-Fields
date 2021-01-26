@@ -1,13 +1,13 @@
-var fruits = ['apples', 'mangos', 'banana'];
-var years = new Array(1999, 2000, 2021);
+var fruits = ['apple', 'banana', 'mango'];
+var years = new Array(1999, 2020, 2002);
 
 console.log(fruits);
 console.log(fruits.length);
-console.log(fruits[0]);
+console.log(fruits[1]);
 
 //Add some array
-fruits[0] = 'redbuarry';
-fruits[6] = 'greenbuarry';
+fruits[0] = 'redbarry';
+fruits[6] = 'greenbarry';
 console.log(fruits);
 
 fruits.push('patato');
@@ -16,10 +16,10 @@ console.log(fruits);
 fruits.pop('patato');
 console.log(fruits);
 
-fruits.unshift('blackbuarry');
+fruits.unshift('bluebarry');
 console.log(fruits);
 
-fruits.shift('blackbarry');
+fruits.shift('bluebarry');
 console.log(fruits);
 
-console.log(fruits.splice(0,2));
+console.log(fruits.splice(0,3));

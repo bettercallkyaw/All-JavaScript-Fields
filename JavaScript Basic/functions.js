@@ -10,25 +10,25 @@ function calculateAge(birthYear) {
     return 2021 - birthYear;
 }
 
-var ageKyaw = calculateAge(1999);
-console.log(ageKyaw);
+var age = calculateAge(1999);
+console.log(age);
 
 //function expression
-
 var whatDoYouDo = function (job, completeName) {
     switch (job) {
-        case 'full stack developer':
-            return completeName+' is a full stack developer.';
+        case 'web developer':
+            return completeName + ' is a web developer';
             break;
         case 'teacher':
-            return completeName + ' is a teacher';
+            return completeName + ' teaches kids how code';
             break;
         case 'driver':
-            return completeName + ' is a driver';
+            return completeName + ' is a texi driver';
             break;
         default:
-            return completeName+' is something';
+            return completeName + ' is something';
+            break;
     }
 }
 
-console.log(whatDoYouDo('full stack developer','John Doe'));
+console.log(whatDoYouDo('web developer','john doe'));

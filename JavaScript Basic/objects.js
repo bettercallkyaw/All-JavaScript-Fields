@@ -3,20 +3,31 @@
 var personData = {
     firstName: 'Htin',
     lastName: 'Kyaw',
-    email: 'bettercallkyaw@gmail.com',
-    job: 'full stack developer',
-    age: 21,
+    fullName: 'Htin Kyaw',
+    emailAddress: 'bettercallkyaw@outlook.com',
+    age: 22,
     birthYear: 1999,
-    hobbies: ['hiking', 'sports', 'coding'],
-    personFamily: ['min', 'myat', 'htut'],
-    cityLocation: 'Yangon',
-    currentLive: 'Pinlaung,Saung Pyaung,Shan State',
-    programming: [
+    job: 'no finding yet!',
+    hobbies: ['hiking', 'coding', 'movies', 'swwing'],
+    familyMember: ['htut', 'min', 'myat'],
+    cityLocation: 'Pinlaung',
+    currentLive: 'Myanmar,Sourth Shan State,Pinlaung,Saung Pyaung',
+    isMarried: false,
+    personDetails: [
         {
-            server:'PHP,javascript,python'
+            programmingLanguage:'php,python,javascript'
         },
         {
-            framework:'django,laravel,node'
+            framework:'laravel,django,node,angular,vue,react'
+        },
+        {
+            webDesing:'html,css,bootstrap'
+        },
+        {
+            facebook:'www.facebook.com/profile.php?id=4ajfaija'
+        },
+        {
+            twitter:'www.twitter.com/@htinkyaw22'
         }
     ],
     calcAge: function () {
@@ -24,7 +35,8 @@ var personData = {
     }
 };
 
-console.log(personData.email);
+console.log(personData);
+console.log(personData.fullName);
 console.log(personData.hobbies[0]);
-console.log(personData.programming[0]);
+console.log(personData.personDetails[0]);
 console.log(personData.calcAge());

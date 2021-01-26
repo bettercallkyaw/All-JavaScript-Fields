@@ -1,4 +1,4 @@
-var fullName = 'William Smith';
+var authorName = 'Ashly Kate';
 var age = 33;
 
-console.log('Hello My name is '+fullName+' and I am '+age+ 'year old');
+console.log('Lord of the ring author name is '+authorName+' and his age is '+age);
