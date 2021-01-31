@@ -1,47 +1,48 @@
 const person = {
-    firstName: 'Htin',
-    lastName: 'Kyaw',
-    email: 'htin@faker.com',
-    age: 21,
+    fullName: 'Htin Kyaw',
+    email: 'bettercallkyaw@gmail.com',
     city: 'Pinlaung',
+    age: 22,
+    job: 'full stack developer',
     state: 'Shan',
-    hoppies: ['music', 'coding', 'hiking'],
+    hobbies: ['hiking', 'sports', 'movies'],
     address: {
-        street: 'no.2 faker',
-        home: 'southen shan state',
-        zipcode:12333
+        street: 'PA 34',
+        zipcode: 334567,
+        home_number:34
     }
-}
+};
 
-console.log(person.firstName);
-console.log(person.hoppies['0']);
-
-const { firstName, lastName,address:{street} } = person;
-console.log(firstName);
-console.log(street);
-
-person.job = 'web developer';
 console.log(person);
+console.log(person.fullName);
+console.log(person.hobbies[0]);
+console.log(person.address.street);
 
+const { fullName, address: { home_number } } = person;
+console.log(fullName);
+console.log(home_number);
+
+person.isMarried = true;
+console.log(person);
 /////////////////////////////////////////
 /////////////////////////////////////////
 const todos = [
     {
         id: 1,
-        text: 'meeting boss',
+        text: 'meeting with boss',
         isCompleted:true
     },
     {
         id: 2,
-        text: 'take a deep break',
+        text: 'walking with boot',
         isCompleted:false
     },
     {
         id: 3,
-        text: 'traing coding',
+        text: 'talking with family',
         isCompleted:true
     }
-]
+];
 
 console.log(todos);
 console.log(todos[1].text);
@@ -49,12 +50,13 @@ console.log(todos[1].text);
 const todoJson = JSON.stringify(todos);
 console.log(todoJson);
 
+
 for (let i = 0; i < todos.length; i++){
     console.log(todos[i].text);
 }
 
 for (let todo of todos) {
-    console.log(todo.text);
+    console.log(todo.isCompleted);
 }
 
 //forEach,map,filter
@@ -65,10 +67,12 @@ todos.forEach((todo) => {
 const todoText = todos.map((todo) => {
     return todo.text;
 });
+
 console.log(todoText);
 
+
 const todoCompleted = todos.filter((todo) => {
-    return todo.isCompleted === true;
+    return todo.isCompleted == false;
 }).map((todo) => {
     return todo.text;
 });

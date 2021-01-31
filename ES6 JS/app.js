@@ -1,9 +1,9 @@
-const s = 'hello world';
+const a = 'Hello World';
 
-console.log(s.substring(0, 5).toLowerCase());
-console.log(s.substring(0, 5).toUpperCase());
-console.log(s.split(''));
+console.log(a.substring(0, 5).toLowerCase());
+console.log(a.substring(0, 5).toUpperCase());
+console.log(a.split(''));
 
-const fruits = 'computer,science,code,it';
+const fruits = 'apple,mango,banana,patato';
 
 console.log(fruits.split(', '));

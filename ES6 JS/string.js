@@ -1,8 +1,8 @@
-const name = 'htin kyaw';
-const age = 21;
+const fullName = 'htin kyaw';
+const age = 22;
 
 //concatenation
-console.log('Hello My name is ' + name + ' and I am ' + age + ' year old');
+console.log('Hello My name is '+fullName+' and I am '+age+' years old.');
 
 //template string
-console.log(`Hello My name is ${name} and I am ${age} year old`);
+console.log(`Hello My name is ${fullName} and I ${age} years old.`);

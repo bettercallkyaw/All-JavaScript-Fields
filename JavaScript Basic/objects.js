@@ -1,42 +1,44 @@
 //objects and properties
 
 var personData = {
-    firstName: 'Htin',
-    lastName: 'Kyaw',
-    fullName: 'Htin Kyaw',
-    emailAddress: 'bettercallkyaw@outlook.com',
-    age: 22,
+    firstName: 'Jack',
+    lastName: 'Peter',
+    fullName: 'Jack Peter',
+    family: ['william', 'john', 'ashly'],
+    phone: 09760635338,
+    email: 'jace@gmail.com',
     birthYear: 1999,
-    job: 'no finding yet!',
-    hobbies: ['hiking', 'coding', 'movies', 'swwing'],
-    familyMember: ['htut', 'min', 'myat'],
-    cityLocation: 'Pinlaung',
-    currentLive: 'Myanmar,Sourth Shan State,Pinlaung,Saung Pyaung',
-    isMarried: false,
+    nowYear: 2021,
+    age: 22,
+    isMarrid: false,
+    childName: ['kati', 'auba'],
+    cityLocation: 'Santigo',
+    country: 'United State',
+    state: 'texis',
+    salary: 22222222,
+    hobbies:['hiking','sports','movies'],
     personDetails: [
         {
-            programmingLanguage:'php,python,javascript'
+            facebook:'www.facebook.com/profile.php?id=3333fjzfhizsjhafweho'
         },
         {
-            framework:'laravel,django,node,angular,vue,react'
+            twitter:'www.twitter.com/@jack22'
         },
         {
-            webDesing:'html,css,bootstrap'
+            programming:'php,java,python'
         },
         {
-            facebook:'www.facebook.com/profile.php?id=4ajfaija'
-        },
-        {
-            twitter:'www.twitter.com/@htinkyaw22'
+            framework:'laravel,node,django'
         }
     ],
     calcAge: function () {
-        return 2021 - this.birthYear;
+        return this.nowYear - this.birthYear;
     }
 };
 
+
 console.log(personData);
-console.log(personData.fullName);
 console.log(personData.hobbies[0]);
+console.log(personData.country);
 console.log(personData.personDetails[0]);
 console.log(personData.calcAge());

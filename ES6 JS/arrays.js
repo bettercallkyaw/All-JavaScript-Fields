@@ -1,19 +1,21 @@
-const fruits = ['Apples', 'Banana', 'Grapse'];
+const fruits = ['apple', 'banana', 'orange'];
 
-fruits[3] = 'Pears';
-console.log(fruits);
-fruits.push('Mangos');
+fruits[3] = 'patato';
 console.log(fruits);
 
-fruits.unshift('RedBarry');
+fruits.push('greenbarry');
 console.log(fruits);
 
-fruits.pop('');
+fruits.pop('greenbarry');
 console.log(fruits);
 
-fruits.shift('');
+fruits.unshift('bluebarry');
 console.log(fruits);
+
+fruits.shift('bluebarry');
+console.log(fruits);
+
 
 console.log(Array.isArray('Hello'));
 console.log(Array.isArray(fruits));
-console.log(fruits.indexOf('Apples'));
+console.log(fruits.indexOf('orange'));

@@ -1,20 +1,26 @@
-for (var i = 0; i <= 100; i++){
+for (var i = 0; i <= 50; i++){
     console.log(i);
 }
 
-var fruits = ['apple', 'banana', 'mango', 'greenbarry'];
-for (var i = 0; i < fruits.length; i++){
-    console.log(fruits[i]);
+var member = ['jack', 'peter', 'ahsly', 'john'];
+for (var i = 0; i < member.length; i++){
+    console.log(member[i]);
 }
 
 var i = 0;
-while (i<fruits.length) {
-    console.log(fruits[i]);
+while (i<member.length) {
+    console.log(member[i]);
+    i++;
+}
+
+var i = 0;
+while (i<=10) {
+    console.log(i);
     i++;
 }
 
 var i = 0;
 do {
-    console.log(fruits[i]);
+    console.log(member[i]);
     i++;
-} while (i<fruits.length);
+} while (i<member.length);

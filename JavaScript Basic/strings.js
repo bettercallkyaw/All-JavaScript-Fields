@@ -1,4 +1,5 @@
-var authorName = 'Ashly Kate';
-var age = 33;
+var fullName = 'John Doe';
+var age = 23;
+var job = 'full stack developer';
 
-console.log('Lord of the ring author name is '+authorName+' and his age is '+age);
+console.log("Hello My name is "+fullName+' and I am '+age+'.I am current work '+job);
