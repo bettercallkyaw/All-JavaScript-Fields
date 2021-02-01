@@ -1,10 +1,10 @@
 //let,const
 
-const age = 30;
-//age = 31;
+const fullName = 'Jack Peter';
+//fullName = 'john doe';
 
-let name = 'john doe';
-name = 'ashly kate';
+let age = 21;
+age = 22;
 
+console.log(fullName);
 console.log(age);
-console.log(name);

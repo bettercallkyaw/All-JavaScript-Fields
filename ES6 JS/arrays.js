@@ -1,21 +1,21 @@
 const fruits = ['apple', 'banana', 'orange'];
 
-fruits[3] = 'patato';
+console.log(fruits);
+fruits[3] = 'bluebarry';
 console.log(fruits);
 
-fruits.push('greenbarry');
+fruits.push('redbarry');
 console.log(fruits);
 
-fruits.pop('greenbarry');
+fruits.pop('redbarry');
 console.log(fruits);
 
-fruits.unshift('bluebarry');
+fruits.unshift('blackbarry');
 console.log(fruits);
 
-fruits.shift('bluebarry');
+fruits.shift('blackbarry');
 console.log(fruits);
-
 
 console.log(Array.isArray('Hello'));
 console.log(Array.isArray(fruits));
-console.log(fruits.indexOf('orange'));
+console.log(fruits.indexOf('apple'));

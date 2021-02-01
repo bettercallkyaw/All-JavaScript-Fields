@@ -1,31 +1,42 @@
 const person = {
-    fullName: 'Htin Kyaw',
+    fullName: 'htin kyaw',
     email: 'bettercallkyaw@gmail.com',
-    city: 'Pinlaung',
     age: 22,
-    job: 'full stack developer',
-    state: 'Shan',
     hobbies: ['hiking', 'sports', 'movies'],
+    isMarried: true,
+    child: ['kyaw angela', 'angela kyaw'],
+    parents: ['daw', 'yee'],
+    city: 'pinlaung',
+    country: 'Myanmar',
     address: {
-        street: 'PA 34',
-        zipcode: 334567,
-        home_number:34
-    }
+        street: 'Ma 3C',
+        phone: 3345333409,
+        zip:345678
+    },
+    social: [
+        {
+            facebook:'www.facebook.com/profile.id?id=4r8uiaj444'
+        },
+        {
+            twitter:'www.twitter.com/@htinkyaw'
+        }
+    ]
 };
 
 console.log(person);
-console.log(person.fullName);
-console.log(person.hobbies[0]);
-console.log(person.address.street);
+console.log(person.country);
+console.log(person.hobbies[1]);
+console.log(person.address.zip);
+console.log(person.social[1]);
 
-const { fullName, address: { home_number } } = person;
+const { fullName, address :{ phone } } = person;
 console.log(fullName);
-console.log(home_number);
+console.log(phone);
 
-person.isMarried = true;
+person.partener = 'angela yu';
 console.log(person);
-/////////////////////////////////////////
-/////////////////////////////////////////
+
+//forEach,map,filter
 const todos = [
     {
         id: 1,
@@ -34,7 +45,7 @@ const todos = [
     },
     {
         id: 2,
-        text: 'walking with boot',
+        text: 'walking with girl',
         isCompleted:false
     },
     {
@@ -59,8 +70,7 @@ for (let todo of todos) {
     console.log(todo.isCompleted);
 }
 
-//forEach,map,filter
-todos.forEach((todo) => {
+todos.forEach((todo) => { 
     console.log(todo.text);
 });
 
@@ -70,9 +80,8 @@ const todoText = todos.map((todo) => {
 
 console.log(todoText);
 
-
 const todoCompleted = todos.filter((todo) => {
-    return todo.isCompleted == false;
+    return todo.isCompleted === true;
 }).map((todo) => {
     return todo.text;
 });
